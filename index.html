@@ -305,7 +305,7 @@ let state = {
 };
 
 function render() {
-  preview.innerHTML = marked.parse(editor.value || '');
+  preview.innerHTML = marked.parse(editor.value || '', { breaks: true });
 }
 
 function applyTheme() {
